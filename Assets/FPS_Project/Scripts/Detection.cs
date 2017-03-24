@@ -13,7 +13,6 @@ public class Detection : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         _checkRate = 0.5f;
-        _nextCheck = 0.0f;
         SetInitialReferences();
         _range = 5;
     }
