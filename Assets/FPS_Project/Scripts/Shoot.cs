@@ -6,13 +6,14 @@ public class Shoot : MonoBehaviour {
     private float _fireRate;
     private float _nextFire;
     private RaycastHit _hit;
-    [SerializeField]
     private float _range;
     private Transform _myTransform;
 
 	// Use this for initialization
 	void Start () {
         _fireRate = 0.2f;
+        _nextFire = 0.0f;
+        _range = 300.0f;
         SetInitialReferences();
     }
 
